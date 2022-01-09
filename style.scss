@@ -1,0 +1,102 @@
+// font family
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+$font-family-primary: "Lexend Deca", sans-serif; // 400
+$font-family-secondary: "Big Shoulders Display", cursive; //700
+
+// uniti
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+// base style
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: auto;
+  width: 50%;
+  //   height: 70%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+  //   grid-template-rows: 1fr 3fr 1fr;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.card {
+  padding: 6rem 4rem;
+  padding-right: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  &-1 {
+    background-color: hsl(31, 77%, 52%);
+  }
+  &-2 {
+    background-color: hsl(184, 100%, 22%);
+  }
+  &-3 {
+    background-color: hsl(179, 100%, 13%);
+    padding-right: 6rem;
+  }
+}
+.header {
+  padding: 4rem 0 1rem 0;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-size: 4rem;
+  font-family: $font-family-secondary;
+  font-weight: 700;
+}
+.paraghraph {
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 2rem 0 1rem 0;
+}
+.btn {
+  margin-top: 8rem;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 1.4rem;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem rgba(black, 0.15);
+
+  &-1 {
+    color: hsl(31, 77%, 52%);
+  }
+  &-2 {
+    color: hsl(184, 100%, 22%);
+  }
+  &-3 {
+    color: hsl(179, 100%, 13%);
+  }
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.2s;
+  backface-visibility: hidden;
+  &:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+}
