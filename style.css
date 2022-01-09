@@ -24,11 +24,11 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin-top: auto;
-  width: 45%;
+  width: 40%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+  -ms-grid-columns: (minmax(18rem, 2fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 2fr));
   border-radius: 1rem;
   overflow: hidden;
 }
