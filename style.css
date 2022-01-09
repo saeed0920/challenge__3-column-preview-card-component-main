@@ -94,12 +94,9 @@ body {
   border-radius: 2rem;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
-  overflow: hidden;
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 
 .btn-1 {
@@ -118,5 +115,27 @@ body {
   background-color: transparent;
   color: white;
   border: 1px solid white;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 2rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+  .attribution {
+    display: none;
+  }
+  .container {
+    width: 85%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

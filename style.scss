@@ -90,13 +90,30 @@ body {
   &-3 {
     color: hsl(179, 100%, 13%);
   }
-  overflow: hidden;
   cursor: pointer;
   transition: all 0.2s;
-  backface-visibility: hidden;
   &:hover {
     background-color: transparent;
     color: white;
     border: 1px solid white;
+  }
+}
+.attribution {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-family: $font-family-primary;
+}
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+  .attribution {
+    display: none;
+  }
+  .container {
+    width: 85%;
   }
 }
