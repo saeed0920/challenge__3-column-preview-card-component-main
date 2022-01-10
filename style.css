@@ -15,27 +15,24 @@ html {
 
 body {
   background-color: #f2f2f2;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  margin-top: auto;
-  width: 50%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(20rem, 2fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   border-radius: 1rem;
   overflow: hidden;
 }
 
 .card {
   padding: 6rem 4rem;
-  padding-right: 7rem;
+  padding-right: 9rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +58,6 @@ body {
 
 .card-3 {
   background-color: #004241;
-  padding-right: 6rem;
 }
 
 .header {
@@ -90,7 +86,7 @@ body {
   outline: none;
   border: 1px solid transparent;
   background-color: #f2f2f2;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   border-radius: 2rem;
   -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
@@ -118,13 +114,13 @@ body {
 }
 
 .attribution {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  font-size: 2rem;
+  position: fixed;
+  bottom: 0;
+  font-size: 1.4rem;
+  background-color: white;
   font-family: "Lexend Deca", sans-serif;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -132,7 +128,7 @@ body {
     font-size: 50%;
   }
   .attribution {
-    display: none;
+    font-size: 1.2rem;
   }
   .container {
     width: 85%;
